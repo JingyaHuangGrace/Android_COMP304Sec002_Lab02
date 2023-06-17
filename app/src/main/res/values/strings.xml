@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">jingyahuang_COMP304Sec002_Lab02_Ex01</string>
+    <string name="btnEnter">ENTER</string>
+    <string name="btnCheckOut">CHECKOUT</string>
+    <string name="btnNext">NEXT</string>
+    <string name="btnSubmit">SUBMIT</string>
+    <string name="txtHomeType">Select your home type from the menu options...</string>
+    <string name="txtInformation">Please enter your information below: </string>
+    <string name="apartment1">1141 Royal York Road : $2450</string>
+    <string name="apartment2">765 Browns Line : $2779</string>
+    <string name="apartment3">268 Merton St : $2350</string>
+    <string name="semi1">Bishopstoke Lane : $4200</string>
+    <string name="semi2">5838 Rainberry Dr : $3450</string>
+    <string name="semi3">Quiet Creek Drive : $3800</string>
+    <string name="detached1">Rutherford Road North : $3500</string>
+    <string name="detached2">Richmond Hil : $3800</string>
+    <string name="detached3">Milton : $3300</string>
+    <string name="condo1">2770 Aquitaine Avenue : $2300</string>
+    <string name="condo2">Richmond Hill : $2350</string>
+    <string name="condo3">251 Jarvis Street : $2700</string>
+    <string name="townhouse1">Oakville : $3100</string>
+    <string name="townhouse2">26 Valliere Drive : $3200</string>
+    <string name="townhouse3">Mississauga : $3300</string>
+
+
 </resources>

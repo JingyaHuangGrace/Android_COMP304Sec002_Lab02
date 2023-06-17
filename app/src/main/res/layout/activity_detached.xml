@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="?colorOnPrimary"
+    tools:context=".Detached">
+
+    <TextView
+        android:id="@+id/textViewCondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detached Home Selection"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxDetached1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detached1"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageDetached1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/detached1"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxDetached2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detached2"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageDetached2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/detached2"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxDetached3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detached3"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageDetached3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/detached3"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnDetached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/btnCheckOut"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

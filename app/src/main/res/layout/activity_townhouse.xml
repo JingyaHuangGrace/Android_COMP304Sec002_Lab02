@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="?colorOnPrimary"
+    tools:context=".Townhouse">
+
+    <TextView
+        android:id="@+id/textViewTownhouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Townhouse Selection"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxTownhouse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/townhouse1"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageTownhouse1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/townhouse1"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxTownhouse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/townhouse2"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageTownhouse2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/townhouse2"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxTownhouse3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/townhouse3"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageTownhouse3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/townhouse3"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnTownhouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/btnCheckOut"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
