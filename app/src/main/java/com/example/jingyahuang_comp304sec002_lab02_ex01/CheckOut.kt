@@ -3,6 +3,7 @@ package com.example.jingyahuang_comp304sec002_lab02_ex01
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
@@ -21,9 +22,27 @@ class CheckOut : AppCompatActivity() {
         val radioHome3 = findViewById<RadioButton>(R.id.radioButtonHome3)
 
         type.text = intent.getStringExtra("type")
-        radioHome1.text = selectedHomes.getOrNull(0) ?: ""
-        radioHome2.text = selectedHomes.getOrNull(1) ?: ""
-        radioHome3.text = selectedHomes.getOrNull(2) ?: ""
+        val home1Text = selectedHomes.getOrNull(0)
+        val home2Text = selectedHomes.getOrNull(1)
+        val home3Text = selectedHomes.getOrNull(2)
+
+        radioHome1.text = home1Text
+        radioHome2.text = home2Text
+        radioHome3.text = home3Text
+
+        if (home1Text.isNullOrEmpty()) {
+            radioHome1.visibility = View.GONE
+        }
+
+        if (home2Text.isNullOrEmpty()) {
+            radioHome2.visibility = View.GONE
+        }
+
+        if (home3Text.isNullOrEmpty()) {
+            radioHome3.visibility = View.GONE
+        }
+
+
 
         val button = findViewById<Button>(R.id.btnNext)
         button.setOnClickListener{
